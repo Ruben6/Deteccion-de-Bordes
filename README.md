@@ -5,3 +5,6 @@ corresponden a subrutinas necesarias para el procesamiento de la imagen.
 La imagen para realizar pruebas, se ha tomado del sitio:
 http://fichas.infojardin.com/bonsai/tilia-cordata-tilo-hojas-pequenas-hoja-pequena-bonsai.htm
 mientras que el umbral seleccionado ha sido de 47.
+
+Datos personales:
+Rueben Hernandez Aleman   Matricula: 1290895
