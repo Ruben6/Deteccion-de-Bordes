@@ -1,0 +1,3 @@
+git add immu.jpg 
+git commit -m "imagen original" 
+git push 
