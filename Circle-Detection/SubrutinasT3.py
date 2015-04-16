@@ -19,25 +19,30 @@ def Angulo(ang,visitados):
 
 #from the Hough transform, the linear regressor is calculated
 #for each line detected
-def line(h,w,By,Bx,angulo):
+def line(h,w,py,px,angulo):
     import math
-    x=0
-    y=0
-    x2=0
-    y2=0
+    x=1
+    y=1
     r=0
-    r2=0
+    a=0
+    b=0
     pt=[]
-    while(y<h-1 and y>=0 and x<w-1 and x>=0):
-                x=int(round(Bx-r*math.cos(math.radians(angulo))))
-                y=int(round(By+r*math.sin(math.radians(angulo))))
-                x2=int(round(Bx-r2*math.cos(math.radians(angulo))))
-                y2=int(round(By+r2*math.sin(math.radians(angulo))))
-                if x>=0 and y>=0:
-                    pt.append((y,x))
-                    pt.append((y2,x2))
-                r-=1
-                r2+=1
+    while a<2:
+        if b==0:
+            th=angulo
+        else:
+            th=angulo-180
+        if y >= 1 and y < h-1 and x >= 1 and x < w-1:
+            x=int(round(px-r*math.cos(math.radians(th))))
+            y=int(round(py+r*math.sin(math.radians(th))))
+            r-=1
+            pt.append((y,x))
+        else:
+            x=1
+            y=1
+            r=0
+            b=1
+            a+=1
             
     return pt
 

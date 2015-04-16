@@ -24,7 +24,7 @@ h1=0
 w1=0
 ch,cw=corrige(ima2,h,w)
 c=0
-paso=2
+paso=1
 umbral=0.38 # para promedios
 umbral2=120 # para identificar circulos
 while (h1<h-ch):
