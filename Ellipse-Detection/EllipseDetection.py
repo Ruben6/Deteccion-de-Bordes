@@ -125,7 +125,7 @@ while (h1<h-ch):
 
 
 print "%d elipses detectadas" %c
-cv2.imshow('Circle detection',out)
+cv2.imshow('Ellipse Detection',out)
 cv2.imwrite('Output.jpg',out)
 cv2.imwrite('Input.jpg',ima2)
 cv2.waitKey(0) & 0xFF
