@@ -1,6 +1,5 @@
-#A color randomly generated through the linear congruential method,
-#whose input values are the initial value of the sequence and the
-#maximum bounding of the series.
+#A color is generated through the linear congruential method,
+#whose input values are the initial value of the sequence
 import cv2
 import numpy as np
 def color(xo):
