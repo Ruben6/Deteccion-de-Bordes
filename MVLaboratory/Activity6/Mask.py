@@ -10,9 +10,9 @@ cv2.imwrite('input.png',gr)
 filmin=fmin(gr,gr2)
 
 
-#img3=cv2.imread('input1.png',1)
-#gr3=gray(img3)
-#med=median(gr3)
+img3=cv2.imread('input1.png',1)
+gr3=gray(img3)
+med=median(gr3)
 
 fgauss=gauss(gr)
 
