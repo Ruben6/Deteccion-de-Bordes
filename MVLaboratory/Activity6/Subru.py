@@ -1,5 +1,5 @@
 # -*- coding: cp1252 -*-
-
+# inicia
 def gray(img):
     h, w, d = img.shape
     for h1 in xrange(0,h,1):
